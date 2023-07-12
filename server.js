@@ -28,6 +28,7 @@ app.post('/register', async (req, res) => {
     const hashedPassword = await bcrypt.hash(req.body.password, 10)
     users.push({
       id: Date.now().toString(),
+      name: req.body.name,
     })
   } catch {
     
