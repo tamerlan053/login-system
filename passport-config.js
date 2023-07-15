@@ -1,1 +1,3 @@
-
+function initialize(passport) {
+  
+}
