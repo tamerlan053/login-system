@@ -1,5 +1,6 @@
 const LocalStrategy = require('passport-local').Strategy
 
 function initialize(passport) {
-  passport.use( new LocalStrategy({ usernameField: 'email'}))
+  passport.use( new LocalStrategy({ usernameField: 'email'}), 
+  authenticateUser)
 }
