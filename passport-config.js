@@ -6,6 +6,10 @@ function initialize(passport) {
     if (user == null) {
       return done(null, false, { message: 'No user with that email' })
     }
+
+    try {
+      
+    }
   }
 
   passport.use(new LocalStrategy({ usernameField: 'email' }), authenticateUser)
