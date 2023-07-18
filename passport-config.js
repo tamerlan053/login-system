@@ -4,4 +4,6 @@ function initialize(passport) {
   const authenticateUser = (email, password, done) => {
     const user = getUserByEmail(email)
   }
+
+  passport.use(new LocalStrategy({ usernameField: 'email' }), authenticateUser)
 }
