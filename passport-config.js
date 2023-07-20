@@ -22,3 +22,5 @@ function initialize(passport, getUserByEmail, getUserById) {
   passport.serializeUser((user, done) => { })
   passport.deserializeUser((id, done) => { })
 }
+
+module.exports = initialize
